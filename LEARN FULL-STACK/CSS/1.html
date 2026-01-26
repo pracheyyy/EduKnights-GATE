@@ -1,0 +1,49 @@
+<!-- 
+CSS = Cascading Style Sheets
+Controls design & layout 
+
+3 Ways to write CSS
+❌ Inline (avoid)
+❌ Internal (okay for learning)
+✅ External (best practice) 
+-->
+
+
+<!-- (internal for today):  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learn css basics</title>
+
+<style>
+    p{
+      color: blue;
+    }
+
+/* Every HTML element is a box:
+| margin |
+| border |
+| padding |
+| content |  */
+
+.card {
+  width: 300px;        
+  padding: 16px;
+  border: 1px solid #ccc;
+  margin: 40px auto;   
+}
+</style>
+
+</head>
+<body>
+  <p>hello this is prachi</p>
+  
+  <div class="card">
+    <h3>Card Title</h3>
+    <p>This is a simple card using CSS box model.</p>
+  </div>
+
+</body>
+</html>
