@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox practice</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: #2d89ef;
+        }
+
+        .menu {
+            display: flex;
+            gap: 16px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            transition: 0.3s;
+        }
+
+        .nav-btn:hover {
+            background: white;
+            color: #2d89ef;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">MyLogo</div>
+
+    <div class="menu">
+         <a href="#" class="nav-btn">Home</a>
+         <a href="#" class="nav-btn">About</a>
+         <a href="#" class="nav-btn">Contact</a>
+    </div>
+</nav>
+
+</body>
+</html>

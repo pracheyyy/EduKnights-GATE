@@ -1,0 +1,91 @@
+<!-- 
+What is Flexbox?
+Flexbox is a 1-dimensional layout system
+→ It arranges items in a row OR column 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>felexbox</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: #2d89ef;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">MyLogo</div>
+        <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        </ul>
+    </nav>
+
+     <!-- Responsive CARD LAYOUT -->
+    <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    </div>
+
+</body>
+</html>
+
+<!--
+
+.container {
+  display: flex;
+}
+That’s it. Now children become flex items.
+
+flex-direction: row;     /* default */
+flex-direction: column;
+
+justify-content: flex-start;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-items: stretch;
+align-items: center;
+align-items: flex-start;
+align-items: flex-end;
+
+gap: 20px;
+
+flex-wrap: wrap;
+ 
+-->
