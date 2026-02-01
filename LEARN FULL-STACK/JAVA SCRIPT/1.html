@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 6 – JavaScript Basics</title>
+</head>
+<body>
+
+  <h1>Day 6: JavaScript Basics</h1>
+  <p>Open browser console to see output</p>
+
+  <!-- JavaScript always runs inside <script> tag -->
+  <!-- We place it at the end so HTML loads first -->
+
+  <script>
+    /**************************************
+     * 1️⃣ PRINTING OUTPUT
+     **************************************/
+
+    // console.log() is used to print output
+    // You can see this in browser console
+    console.log("Hello JavaScript");
+    console.log("Day 6 started");
+
+    /**************************************
+     * 2️⃣ VARIABLES
+     **************************************/
+
+    // let → value CAN change
+    let age = 20;
+    console.log("Age:", age);
+
+    age = 21; // updating value
+    console.log("Updated Age:", age);
+
+    // const → value CANNOT change
+    const name = "Prachi";
+    console.log("Name:", name);
+
+    // name = "Patil"; ❌ ERROR (not allowed)
+
+    /**************************************
+     * 3️⃣ DATA TYPES
+     **************************************/
+
+    let marks = 85;           // number
+    let college = "JSPM";     // string
+    let isStudent = true;     // boolean
+    let result;               // undefined
+    let city = null;          // null
+
+    console.log(typeof marks);      // number
+    console.log(typeof college);    // string
+    console.log(typeof isStudent);  // boolean
+    console.log(typeof result);     // undefined
+    console.log(typeof city);       // object (JS quirk)
+
+    /**************************************
+     * 4️⃣ OPERATORS
+     **************************************/
+
+    let x = 10;
+    let y = 3;
+
+    console.log("Addition:", x + y);
+    console.log("Subtraction:", x - y);
+    console.log("Multiplication:", x * y);
+    console.log("Division:", x / y);
+    console.log("Remainder:", x % y);
+
+    /**************************************
+     * 5️⃣ COMPARISON OPERATORS
+     **************************************/
+
+    // Always use === (strict comparison)
+    console.log(10 === 10);     // true
+    console.log(10 === "10");   // false
+
+    // Avoid ==
+    console.log(10 == "10");    // true (confusing)
+
+    /**************************************
+     * 6️⃣ CONDITIONAL STATEMENT (if-else)
+     **************************************/
+
+    let score = 75;
+
+    if (score >= 40) {
+      console.log("Result: Pass");
+    } else {
+      console.log("Result: Fail");
+    }
+
+    /**************************************
+     * 7️⃣ EVEN / ODD CHECK (LOGIC PRACTICE)
+     **************************************/
+
+    let number = 7;
+
+    if (number % 2 === 0) {
+      console.log(number, "is Even");
+    } else {
+      console.log(number, "is Odd");
+    }
+
+    /**************************************
+     * 8️⃣ STRING CONCATENATION
+     **************************************/
+
+    let firstName = "Prachi";
+    let lastName = "Patil";
+
+    // Old way
+    console.log(firstName + " " + lastName);
+
+    // Modern way (template literal)
+    console.log(`Full Name: ${firstName} ${lastName}`);
+
+    /**************************************
+     * ✅ DAY 6 COMPLETE
+     **************************************/
+    console.log("Day 6 JavaScript completed successfully");
+  </script>
+
+</body>
+</html>
